@@ -1,0 +1,26 @@
+/* .button-group {
+    border: 1px solid #cacaca;
+    width: auto;
+} */
+.button-group__button {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+.button-group__button.active {
+    background: #ca5612;
+    color: #fff;
+}
+
+@media (min-width: 650px) {
+    .button-group__button:first-child {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .button-group__button:last-child {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
